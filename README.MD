@@ -2,6 +2,8 @@
 
 Welcome to the **Poison Girl** theme for Oh My Posh! This theme is designed to provide a stylish and distinctive prompt for your terminal.
 
+![Poison Girl](./assets/poison-girl-example.jpg 'Poison Girl')
+
 ## Features
 
 - Customizable prompt colors and icons.

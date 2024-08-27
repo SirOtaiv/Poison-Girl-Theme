@@ -1,0 +1,64 @@
+{
+  "$schema": "https://raw.githubusercontent.com/JanDeDobbeleer/oh-my-posh/main/themes/schema.json",
+  "blocks": [
+    {
+      "alignment": "left",
+      "segments": [
+        {
+          "background": "transparent",
+          "foreground": "#ffffff",
+          "style": "plain",
+          "template": "{{ if .WSL }}WSL at {{ end }}{{.Icon}} ",
+          "type": "os"
+        },
+        {
+          "foreground": "#e02727",
+          "style": "plain",
+          "template": "@{{ .UserName }} ",
+          "type": "session"
+        },
+        {
+          "foreground": "#1ceb5a",
+          "style": "plain",
+          "template": "\u279c",
+          "type": "text"
+        },
+        {
+          "foreground": "#2ee6e2",
+          "properties": {
+            "style": "agnoster_short"
+          },
+          "style": "plain",
+          "template": " <>\uf07c {{ .Path }}</>",
+          "type": "path"
+        },
+        {
+          "foreground": "#906cff",
+          "properties": {
+            "branch_icon": "\ue725 ",
+            "fetch_stash_count": true,
+            "fetch_status": true,
+            "fetch_upstream_icon": true,
+            "fetch_worktree_count": true,
+            "upstream_icons": {
+              "github.com":"\uF408",
+              "gitlab.weg.net":"\uF296"
+            }
+          },
+          "style": "plain",
+          "template": " <#DDB15F>{{ url .UpstreamIcon .UpstreamURL }} git[</>{{ .HEAD }}<#DDB15F>]</>",
+          "type": "git"
+        },
+        {
+          "foreground": "#DCB977",
+          "style": "plain",
+          "template": " \uf119",
+          "type": "status"
+        }
+      ],
+      "type": "prompt"
+    }
+  ],
+  "final_space": true,
+  "version": 2
+}
